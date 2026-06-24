@@ -1,7 +1,7 @@
 # png-generator
 PNG generation in pure C.
 
-Inspired from Inigo Quilez's PNG Generator ([here])(https://iquilezles.org/articles/minipng64).
+Inspired from Inigo Quilez's PNG Generator (https://iquilezles.org/articles/minipng64).
 
 Make it:
 
@@ -19,4 +19,5 @@ I encourage you to mess around with this C code. Hopefully, this will give you k
 Try to use proper attribution whenever possible.
 
 Have fun,
+
 Kavi
