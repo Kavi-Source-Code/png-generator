@@ -42,6 +42,7 @@ int main(int argc, char **argv)
 	pixels[i] = ((r & 255) << 16) | ((g & 255) << 8) | (b & 255) | ((a & 255) << 24);
         r++;
 	g++;
+	printf("Handled %d\n", i);
     }
 
     // Open the file.
