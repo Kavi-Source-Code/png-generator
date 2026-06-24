@@ -22,8 +22,8 @@ bool write_png_64x64( FILE *fp, const uint32_t pixels[] )
     if( !fwrite(binary,48,1,fp) ) return false;
     for( int i=0; i<64; i++ )
     {
-        if( !fwrite(binary+48,    1,1,fp) ) return false;
-        if( !fwrite(pixels+64*i,256,1,fp) ) return false;
+        if( !fwrite(binary + 48,    1,1,fp) ) return false;
+        if( !fwrite(pixels + 64*i,256,1,fp) ) return false;
     }
     if( !fwrite(binary+48,20,1,fp) ) return false;
     return true;
@@ -40,7 +40,7 @@ int main(int argc, char **argv)
 
     // Set color with a loop.
     for (int i = 0; i < 64*64; i++) {
-	pixels[i] = ((color >> 16) & 0xff) | ((color >> 8) & 0xff) << 8 | (color & 0xff) << 16 | 0xff << 24;
+        pixels[i] = ((color >> 16) & 0xff) | ((color >> 8) & 0xff) << 8 | (color & 0xff) << 16 | 0xff << 24;
         
     }
 
@@ -50,7 +50,7 @@ int main(int argc, char **argv)
     // Basic error checking.
     if (!file)
     {
-        fprintf(stderr, "Couldn't open file\n");
+        fprintf(stderr, "Couldn't open file.\n");
         return 1;
     }
 
@@ -62,7 +62,7 @@ int main(int argc, char **argv)
     else
     {
         fprintf(stderr, "Couldn't write PNG file.\n");
-	return 1;
+        return 1;
     }
 
     // Be nice and close our file so that we can't actually write it anymore.
