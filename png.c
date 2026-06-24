@@ -45,7 +45,8 @@ int main(int argc, char **argv)
     }
 
     // Open the file.
-    FILE *file = fopen("out.png", "wb");
+    
+    FILE *file = fopen(argv[2], "wb");
     
     // Basic error checking.
     if (!file)

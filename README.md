@@ -9,7 +9,7 @@ Make it:
 
 Then, assuming that the `make` command has been run, use:
 
-	./png <some 6 digit hex color>
+	./png <some 6 digit hex color> <png filename>
 	open out.png
 
 --------------------------------------------------------
