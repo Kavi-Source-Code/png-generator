@@ -41,7 +41,7 @@ int main(int argc, char **argv)
     // Set color with a loop.
     for (int i = 0; i < 64*64; i++) {
         pixels[i] = ((color >> 16) & 0xff) | ((color >> 8) & 0xff) << 8 | (color & 0xff) << 16 | 0xff << 24;
-       printf("Handled %d\n", i); 
+	printf("Handled row %d/64\n", (i / 64) % 64); 
     }
 
     // Open the file.

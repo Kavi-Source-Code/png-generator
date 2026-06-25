@@ -11,5 +11,5 @@ grad: grad.c
 	$(CC) grad.c -o grad
 
 clean:
-	rm -f png grad
+	rm -f png grad *.png
 
