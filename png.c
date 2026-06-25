@@ -33,7 +33,7 @@ bool write_png_64x64( FILE *fp, const uint32_t pixels[] )
 int main(int argc, char **argv)
 {
     // Pixels.
-    uint32_t pixels[64*64];
+    uint32_t pixels[128*128];
 
     // Color.
     uint32_t color = strtol(argv[1], NULL, 16);
